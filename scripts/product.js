@@ -13,33 +13,33 @@
 // getData()
 
 let data = {
-    "id": 846396609,
-    "uid": "ALYVECP",
-    "link_id": 846446250,
+    "id": 807279979,
+    "uid": "AZUPAZR",
+    "link_id": 807301446,
     "has_variant": false,
-    "url": "/clothing/kenzo-logo-printed-crewneck-t-shirt-62/",
-    "slug": "kenzo-logo-printed-crewneck-t-shirt-62",
+    "url": "/clothing/kenzo-tiger-classic-sweatshirt-84/",
+    "slug": "kenzo-tiger-classic-sweatshirt-84",
     "gender": "F",
-    "short_description": "Logo Printed Crewneck T-shirt - Black",
-    "lead_url": "/track/lead/846446250/",
-    "full_price_with_currency_symbol": "$128.23",
-    "full_price_machine_readable_integer_string": "128",
-    "sale_price_with_currency_symbol": "$128",
-    "sale_price_machine_readable_integer_string": "128",
+    "short_description": "Tiger Classic Sweatshirt - Black",
+    "lead_url": "/track/lead/807301446/",
+    "full_price_with_currency_symbol": "$264",
+    "full_price_machine_readable_integer_string": "264",
+    "sale_price_with_currency_symbol": "$158",
+    "sale_price_machine_readable_integer_string": "158",
     "currency": "USD",
     "designer_name": "KENZO",
     "designer_slug": "kenzo",
-    "retailer_name": "Cettire",
-    "image_url": "https://cdna.lystit.com/200/250/tr/photos/cettire/5adac132/kenzo-Black-Logo-Printed-Crewneck-T-shirt.jpeg",
-    "image_alt_text": "KENZO Logo Printed Crewneck T-shirt - Black",
+    "retailer_name": "Coggles",
+    "image_url": "https://cdna.lystit.com/200/250/tr/photos/coggles/cef6990e/kenzo-Black-Tiger-Classic-Sweatshirt.jpeg",
+    "image_alt_text": "KENZO Tiger Classic Sweatshirt - Black",
     "icon_enabled": false,
     "is_affiliate": true,
     "affiliate_promo_url": null,
-    "discount_info": null,
-    "sale_discount": null,
+    "discount_info": "(40% off)",
+    "sale_discount": 40,
     "in_stock": true,
     "overlay_enabled": true,
-    "lead_enabled": false,
+    "lead_enabled": true,
     "context_type": "feed-product",
     "show_offer_meta": true,
     "free_shipping": false,
@@ -51,7 +51,7 @@ let data = {
     "sale_badge": null,
     "use_lazy_images": true,
     "excluded_from_app": false,
-    "app_deeplink_path": "/clothing/kenzo-logo-printed-crewneck-t-shirt-62/",
+    "app_deeplink_path": "/clothing/kenzo-tiger-classic-sweatshirt-84/",
     "koddi_tracking_url": null
 };
 
@@ -211,3 +211,8 @@ function dis(data) {
 }
 
 dis(fake)
+const wishLists = document.querySelector('#wishList');
+wishLists.addEventListener("click",wishList)
+function wishList(){
+    window.location.href = "./track.html"
+}

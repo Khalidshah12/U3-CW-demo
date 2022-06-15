@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyst - Saved items</title>
     <link rel="stylesheet" href="./styles/track.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <!-- Lyst icon in title -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -18,17 +19,33 @@
 
 <body>
 
+     <!-- Nav Bar  -->
+     <div id="navbar">
+        <div id="sign-join">
+            <p>IN-US$</p>
+            <p>Help</p>
+            <p>Sign in</p>
+            <button id="joinbtn">Join</button>
+        </div>
+        <div id="search-div">
+            <img src="./assets/lyst-logo.png" alt="">
+            <h6>WOMEN</h6>
+            <h6 style="text-decoration: none;">MEN</h6>
+            <div id="search">
+                <img src="./assets/icons8-search-500.png" alt="" id="search-img">
+                <input type="text" placeholder="SEARCH (E.G. `VALENTINO DRESSES`)">
+            </div>
+            <img src="./assets/Screenshot 2022-06-15 112642.png" alt="" class="shortcut">
+            <img id="wishList" src="./assets/Screenshot 2022-06-15 112656.png" alt="" class="shortcut">
+            <img src="./assets/Screenshot 2022-06-15 112708.png" alt="" class="shortcut">
+           
+        </div>
+    </div>
+
     <div id="main">
         <h2 id="savedItems">Saved items</h2>
-        <div id="noItem">
-            <div id="iconDiv"><i class='fas fa-heart-broken' style='font-size:28px; color: white;'></i></div>
-            <div id="noItemText">You haven't saved any items</div>
-        </div>
-
-        <div id="createWish"><p>Create your wishlist from across 12,000 stores in one place.</p></div>
-        <div id="justTap"><p>Just tap <span><i class='fas fa-heart' style='font-size:18px'></i></span> to track items you love, and we'll send you an alert when they go on sale or come back in stock.</p></div>
-        <button id="findFav">Find your favorites</button>
-    
+        <!-- <div id="divAfterSaved">Create your wishlist from across 12,000 stores in one place. We'll send you an alert when your favorite products go on sale or come back in stock.</div>
+        <div id="appendWishItems"></div> -->
     </div>
 
 
@@ -36,4 +53,4 @@
 
 </html>
 
-<script src="./scripts/track.js"></script>
+<script type="module" src="./scripts/track.js"></script>
