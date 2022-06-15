@@ -66,8 +66,7 @@ const ProductImages = document.querySelector('#ProductImages');
 const productMainImage = document.querySelector('#productMainImage');
 const productDetails = document.querySelector('#productDetails');
 
-display(data, ProductImages, productMainImage, productDetails)
-
+display(product_card, ProductImages, productMainImage, productDetails)
 
 
 

@@ -1,4 +1,5 @@
 
+// function for display some details and instructions if no items added into track/wishlist
 let displayNoTrack = () =>{
     return `<h2 id="savedItems">Saved items</h2>
     <div id="noItem">

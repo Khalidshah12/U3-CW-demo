@@ -15,6 +15,12 @@ let displayTrack = (data, main) => {
     img.setAttribute("class", "img")
     img.src = data.image_url
 
+    img.addEventListener("click",goToShop)
+    function goToShop(){
+        let a = data.link_id
+        window.location.href = `https://www.lyst.com/track/lead/${a}`
+    }
+
     const removeButton = document.createElement('button');
     removeButton.innerText = "X"
     removeButton.setAttribute("class", "removeButton")
@@ -27,12 +33,21 @@ let displayTrack = (data, main) => {
 
     const brand = document.createElement('h3');
     brand.setAttribute("class", "brand")
-
     brand.innerText = data.designer_name;
+
+    brand.addEventListener("click",ToProductByBrand)
+    function ToProductByBrand(){
+        window.location.href = "../Product.html"
+    }
 
     const detail = document.createElement('p');
     detail.setAttribute("class", "detail")
     detail.innerText = data.short_description
+
+    detail.addEventListener("click",ToProductByDetail)
+    function ToProductByDetail(){
+        window.location.href = "../Product.html"
+    }
 
     const priceDiv = document.createElement('div');
     priceDiv.setAttribute("class", "priceDiv")

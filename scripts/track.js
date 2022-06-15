@@ -1,19 +1,21 @@
 
+// function for working wishlist icon
 const wishLists = document.querySelector('#wishList');
 wishLists.addEventListener("click", wishList)
 function wishList() {
     window.location.href = "./track.html"
 }
 
+// getting track/wishlist data from local storage
+let trackDeals = JSON.parse(localStorage.getItem("trackDeals"))
+
 // importing displayTrack for showing data of track/wishlist
 import displayTrack from "../components/displayTrackData.js"
 
-// importing displayNoTrack for showing details if no items added into track/wishlist
+// importing displayNoTrack for display some details and instructions if no items added into track/wishlist
 import displayNoTrack from "../components/displayNoTrack.js"
 
-let trackDeals = JSON.parse(localStorage.getItem("trackDeals"))
-// console.log(trackDeals)
-
+// condition if items not added into track/wishlist else items added
 if (trackDeals == null) {
     const main = document.querySelector('#main');
     let html = displayNoTrack()
